@@ -5,9 +5,9 @@ import java.sql.SQLException;
 
 public class ClienteDAO {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/agraf";
-    private static final String USER = "MariaDB"; // Ajuste conforme sua configuração
-    private static final String PASSWORD = "123456"; // Ajuste conforme sua configuração
+    private static final String URL = "DB_URL";
+    private static final String USER = "DB_USER"; // Ajuste conforme sua configuração
+    private static final String PASSWORD = "DB_PASSWORD"; // Ajuste conforme sua configuração
 
     public void salvarCliente(Cliente cliente) {
         String sql = "INSERT INTO clientes (nome, endereco, telefone, email) VALUES (?, ?, ?, ?)";
