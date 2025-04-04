@@ -4,9 +4,9 @@ import java.util.List;
 
 public class ProdutoDAO {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/agraf";
-    private static final String USER = "root"; // Ajuste conforme sua configuração
-    private static final String PASSWORD = "123456"; // Ajuste conforme sua configuração
+    private static final String URL = "DB_URL";
+    private static final String USER = "DB_USER"; // Ajuste conforme sua configuração
+    private static final String PASSWORD = "BD_PASSWORD"; // Ajuste conforme sua configuração
 
     // Método para salvar produto no banco de dados
     public void salvarProduto(Produto produto) {
